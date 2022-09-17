@@ -1,0 +1,63 @@
+.intro {
+  display: flex;
+  height: 77vh;
+  margin-top: 6rem;
+}
+
+.i-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: 2rem;
+}
+
+.i-name {
+  display: flex;
+  flex-direction: column;
+}
+
+.i-name > :nth-child(1) {
+  color: var(--black);
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.i-name > :nth-child(2) {
+  color: var(--orange);
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.i-name > :nth-child(3) {
+  color: var(--gray);
+  font-weight: 100;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.i-button {
+  width: 6rem;
+}
+
+.i-icons {
+  margin-top: 2.5rem;
+  display: flex;
+  gap: 0;
+}
+
+.i-icons > * {
+  transform: scale(0.5);
+}
+
+.i-right {
+  flex: 1;
+}
+
+@media screen and (max-width: 460px) {
+  .intro {
+    flex-direction: column;
+    height: 70vh;
+    gap: 7rem;
+  }
+}

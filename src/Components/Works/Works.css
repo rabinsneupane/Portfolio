@@ -1,0 +1,136 @@
+.works {
+  padding: 0 3rem;
+  margin-top: 4rem;
+  height: 90vh;
+  display: flex;
+}
+
+.w-left {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.w-left > :nth-child(1) {
+  color: var(--black);
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.w-left > :nth-child(2) {
+  color: var(--orange);
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+.w-left > :nth-child(3) {
+  color: var(--gray);
+  font-weight: 100;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+.w-button {
+  width: 6rem;
+  margin-top: 2rem;
+}
+
+.w-right {
+  position: relative;
+}
+
+.w-main-circle {
+  left: 9rem;
+  position: relative;
+  width: 18rem;
+  height: 18rem;
+  border-radius: 100%;
+  box-shadow: var(--smboxShadow);
+  top: 2rem;
+  background: #fff;
+}
+
+.w-main-circle > * {
+  position: absolute;
+}
+
+.w-main-circle > :nth-child(1) {
+  top: -3rem;
+  left: 6rem;
+}
+
+.w-main-circle > :nth-child(2) {
+  top: 5rem;
+  left: -3rem;
+}
+.w-main-circle > :nth-child(3) {
+  top: 5rem;
+  left: 6rem;
+}
+.w-main-circle > :nth-child(4) {
+  top: 5rem;
+  left: 15rem;
+}
+.w-main-circle > :nth-child(5) {
+  top: 13rem;
+  left: 6rem;
+}
+
+.w-sec-circle {
+  width: 6rem;
+  height: 6rem;
+  position: absolute;
+  border-radius: 100%;
+  border: 5px solid #ebebeb;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--smboxShadow);
+}
+
+.w-sec-circle img {
+  transform: scale(0.6);
+}
+
+.w-back-circle {
+  position: absolute;
+  height: 13rem;
+  width: 13rem;
+  border-radius: 100%;
+  z-index: -1;
+}
+
+.blue-circle {
+  background: #1949b8;
+  top: 0;
+  left: 18rem;
+}
+
+.yellow-circle {
+  background: #f5c32c;
+  top: 8rem;
+  left: 18rem;
+}
+
+@media screen and (max-width: 460px) {
+  .works {
+    padding: 0.5rem 1rem;
+    flex-direction: column;
+    gap: 5rem;
+  }
+
+  .w-right {
+    display: flex;
+    align-items: flex-start;
+    justify-content: start;
+    transform: scale(0.8);
+  }
+
+  .w-main-circle {
+    position: static;
+  }
+
+  .w-back-circle {
+    left: 8rem;
+  }
+}

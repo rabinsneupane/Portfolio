@@ -1,0 +1,49 @@
+.services {
+  padding: 0 3rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  height: 90vh;
+  display: flex;
+}
+
+.s-left {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.s-left > :nth-child(1) {
+  color: var(--black);
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.s-left > :nth-child(2) {
+  color: var(--orange);
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+.s-left > :nth-child(3) {
+  color: var(--gray);
+  font-weight: 100;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+.s-button {
+  width: 9rem;
+  margin-top: 2rem;
+}
+
+@media screen and (max-width: 460px) {
+  .services {
+    padding: 0.5rem 1rem;
+    flex-direction: column;
+  }
+
+  .s-right{
+    position: static;
+    display: flex;
+    flex-direction: column;
+  }
+}
