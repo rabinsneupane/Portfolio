@@ -40,9 +40,18 @@ const Testimonials = () => {
         {/* blur here */}
       </div>
       <Swiper
+        className="t-slider"
         modules={[Pagination]}
-        slidesPerView={2}
+        slidesPerView={3}
         pagination={{ clickable: true }}
+        breakpoints={{
+          320: {
+            slidesPerView: 1,
+          },
+          1080: {
+            slidesPerView: 2,
+          },
+        }}
       >
         {clients.map((clients, index) => {
           return (

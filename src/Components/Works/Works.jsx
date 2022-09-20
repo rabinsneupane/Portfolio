@@ -20,7 +20,7 @@ const Works = () => {
         <span style={{ color: darkMode ? "white" : "" }}>My Works with</span>
         <span>Brands & Clients</span>
         <span>
-          Lorem ipsum dolor sit amet consectetur, <br />
+          Lorem ipsum dolor sit amet consectetur, 
           adipisicing elit. Sapiente quas repudiandae ut <br />
           dolorem atque, ea impedit animi nihil eius
         </span>

@@ -16,17 +16,31 @@ const Portfolio = () => {
   const darkMode = theme.state.darkMode;
 
   return (
-    <div className="portfolio">
+    <div className="portfolio" id="Projects">
       <span style={{ color: darkMode ? "white" : "" }}>Recent Projects</span>
       <span>Portfolio</span>
 
       <Swiper
-        spaceBetween={30}
-        slidesPerView={3}
-        grabCursor={true}
         className="p-slider"
+        spaceBetween={30}
+        slidesPerView={4}
+        grabCursor={true}
         modules={[Pagination]}
         pagination={{ clickable: true }}
+        breakpoints={{
+          320: {
+            spaceBetween: 10,
+            slidesPerView: 1,
+          },
+          600: {
+            spaceBetween: 280,
+            slidesPerView: 2,
+          },
+          1024: {
+            spaceBetween: 280,
+            slidesPerView: 3,
+          },
+        }}
       >
         <SwiperSlide>
           <img src={Sidebar} alt="" />

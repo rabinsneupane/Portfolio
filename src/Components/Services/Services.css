@@ -1,15 +1,13 @@
 .services {
-  padding: 0 3rem;
-  margin-top: 4rem;
-  margin-bottom: 4rem;
-  height: 90vh;
   display: flex;
+  gap: -4rem;
 }
 
 .s-left {
   display: flex;
   flex-direction: column;
   position: relative;
+  margin: 6rem 0.5rem;
 }
 
 .s-left > :nth-child(1) {
@@ -35,15 +33,35 @@
   margin-top: 2rem;
 }
 
+.cards {
+  position: relative;
+}
+
+.cards > * {
+  position: absolute;
+}
+
 @media screen and (max-width: 460px) {
   .services {
-    padding: 0.5rem 1rem;
+    margin: 12rem 0 0 0;
     flex-direction: column;
   }
 
-  .s-right{
-    position: static;
+  .s-left {
+    margin-bottom: 1rem;
+  }
+
+  .s-left > :nth-child(2) {
+    font-size: 2rem;
+  }
+
+  .cards {
     display: flex;
     flex-direction: column;
+    gap: 18rem;
+  }
+
+  .cards > * {
+    position: static !important;
   }
 }

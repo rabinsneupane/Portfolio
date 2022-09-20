@@ -1,8 +1,6 @@
 .contact {
-  padding: 0 3rem;
-  height: 70vh;
   display: flex;
-  margin-top: 4rem;
+  margin: 4rem 0 0 5rem;
   gap: 2rem;
 }
 
@@ -51,6 +49,14 @@ form :nth-child(3) {
 @media screen and (max-width: 460px) {
   .contact {
     flex-direction: column;
-    padding: 0.5rem 1rem;
+    margin: 4rem 0.5rem;
+  }
+
+  .c-left span:nth-child(2) {
+    font-size: 2rem;
+  }
+
+  form .user {
+    width: 94%;
   }
 }

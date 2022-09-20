@@ -11,7 +11,8 @@
   border: 7px solid var(--orangeCard);
   box-shadow: var(--orangeCard);
   border-radius: 1.5rem;
-  padding: 0 1.6rem 2rem 1.6rem;
+  padding: 0 1rem 1.5rem 1rem;
+  margin: 2rem 3rem;
 }
 
 .card img {
@@ -21,12 +22,12 @@
 
 .card span:nth-of-type(1) {
   font-weight: bold;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 .card span:nth-of-type(2) {
   color: var(--gray);
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 
 .c-button {
@@ -35,21 +36,14 @@
   border-radius: 7px;
   border: none;
   padding: 10px;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
+  font-weight: bold;
   color: #5290fd;
   cursor: pointer;
 }
 
-.cards {
-  position: relative;
-}
-
-.cards > * {
-  position: absolute;
-}
-
 @media screen and (max-width: 460px) {
-  .card{
-    width:auto
+  .card {
+    width: auto;
   }
 }

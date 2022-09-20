@@ -3,13 +3,15 @@ import "./Intro.css";
 import Github from "../../img/github.png";
 import LinkedIn from "../../img/linkedin.png";
 import Instagram from "../../img/instagram.png";
+import Vector1 from "../../img/Vector1.png";
+import Vector2 from "../../img/Vector2.png";
+import Photo from "../../img/Photo.png";
 import { themeContext } from "../../Context";
 import { useContext } from "react";
-import {motion} from "framer-motion"
+import { motion } from "framer-motion";
 
 const Intro = () => {
-
-  const transition = {duration: 2, type:"spring"}
+  const transition = { duration: 2, type: "spring" };
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
 
@@ -17,11 +19,11 @@ const Intro = () => {
     <div className="intro">
       <div className="i-left">
         <div className="i-name">
-          <span style ={{color:darkMode? "white" : ""}}>Hi! I am</span>
+          <span style={{ color: darkMode ? "white" : "" }}>Hi! I am</span>
           <span>Sammy Robbins</span>
           <span>
             Frontend Designer and Develper with high level of experience in web
-            desigiing and developmet, prdoucting the quality works.
+            designing and development, prdoucing the quality works.
           </span>
         </div>
         <button className="button i-button">Hire me</button>
@@ -50,7 +52,11 @@ const Intro = () => {
         </div>
       </div>
 
-      <div className="i-right"></div>
+      <div className="i-right">
+        <img src={Vector1} alt="" />
+        <img src={Vector2} alt="" />
+        <img src={Photo} alt="" />
+      </div>
     </div>
   );
 };

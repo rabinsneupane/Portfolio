@@ -10,7 +10,7 @@ import { useContext } from "react";
 import { motion } from "framer-motion";
 
 const Services = () => {
-  const transition = { duration: 1, type: "spring" };
+  const transition = { duration: 1.5, type: "spring" };
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
   return (
@@ -30,10 +30,9 @@ const Services = () => {
 
       <div className="s-right cards">
         <motion.div
-          initial={{ left: "25rem" }}
-          whileInView={{ left: "14rem" }}
+          initial={{ top: "-4rem", left: "28rem" }}
+          whileInView={{ top: "-4rem", left: "22rem" }}
           transition={transition}
-          // style={{ left: "14rem" }}
         >
           <Card
             emoji={HeartEmoji}
@@ -43,28 +42,25 @@ const Services = () => {
         </motion.div>
 
         <motion.div
-          initial={{ left: "-11rem", top: "12rem" }}
-          whileInView={{ left: "-4rem" }}
+          initial={{ top: "16rem", left: "26rem" }}
+          whileInView={{ top: "16rem", left: "20rem" }}
           transition={transition}
-          style={{ top: "12rem", left: "-4rem" }}
-        >
-          <Card
-            emoji={Glasses}
-            title={"Developer"}
-            body={"HTML, CSS, Tailwind, javaScript, React"}
-          />
-        </motion.div>
-
-        <motion.div
-          initial={{ top: "19rem", left: "25rem" }}
-          whileInView={{ left: "12rem" }}
-          transition={transition}
-          style={{ top: "19rem", left: "12rem" }}
         >
           <Card
             emoji={Humble}
             title={"UI/UX"}
             body={"Lorem ipsum dolor sit amet, consectetur adipisicing elit."}
+          />
+        </motion.div>
+        <motion.div
+          initial={{ top: "3rem", left: "-8rem" }}
+          whileInView={{ top: "3rem", left: "4rem" }}
+          transition={transition}
+        >
+          <Card
+            emoji={Glasses}
+            title={"Developer"}
+            body={"HTML, CSS, Tailwind, javaScript, React"}
           />
         </motion.div>
       </div>

@@ -2,6 +2,7 @@
   height: 10vh;
   display: flex;
   justify-content: space-between;
+  margin: 0 3rem;
 }
 
 .n-left {
@@ -46,6 +47,11 @@
 
 
 @media screen and (max-width: 460px) {
+
+  .n-wrapper{
+    margin:0 0.5rem
+  }
+  
   .n-list {
     display: none;
   }

@@ -1,8 +1,8 @@
 .works {
-  padding: 0 3rem;
-  margin-top: 4rem;
-  height: 90vh;
+  margin: 0 3rem;
+  margin: 10rem 0 10rem 0;
   display: flex;
+  align-items: center;
 }
 
 .w-left {
@@ -114,16 +114,18 @@
 
 @media screen and (max-width: 460px) {
   .works {
-    padding: 0.5rem 1rem;
+    margin: 4rem 0.5rem 0;
     flex-direction: column;
-    gap: 5rem;
+    gap: 4rem;
+  }
+
+  .w-left > :nth-child(2) {
+    font-size: 2rem;
   }
 
   .w-right {
-    display: flex;
-    align-items: flex-start;
-    justify-content: start;
     transform: scale(0.8);
+    left: -0.5rem;
   }
 
   .w-main-circle {
