@@ -74,12 +74,21 @@
   left: 10rem;
 }
 
-@media screen and (max-width: 460px) {
+.blur {
+  position: absolute;
+  width: 22rem;
+  height: 14rem;
+  border-radius: 50%;
+  z-index: -9;
+  filter: blur(92px);
+}
+
+@media screen and (min-width: 320px) {
   .intro {
-    transform: scale(0.9);
     flex-direction: column;
-    gap: 7rem;
-    margin: 1rem -0.5rem;
+    align-items: center;
+    gap: 8rem;
+    margin: 1rem 0.5rem;
   }
 
   .i-icons {
@@ -88,7 +97,7 @@
 
   .i-right {
     transform: scale(0.8);
-    left: -7.7rem;
+    left: -15rem;
     top: -4rem;
   }
 }

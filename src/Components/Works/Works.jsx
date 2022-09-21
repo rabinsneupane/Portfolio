@@ -20,11 +20,12 @@ const Works = () => {
         <span style={{ color: darkMode ? "white" : "" }}>My Works with</span>
         <span>Brands & Clients</span>
         <span>
-          Lorem ipsum dolor sit amet consectetur, 
-          adipisicing elit. Sapiente quas repudiandae ut <br />
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente
+          quas repudiandae ut <br />
           dolorem atque, ea impedit animi nihil eius
         </span>
         <button className="button w-button">Hire me</button>
+        <div className="blur s-blur1"></div>
       </div>
 
       <div className="w-right">
@@ -55,6 +56,7 @@ const Works = () => {
 
         <div className="w-back-circle blue-circle"></div>
         <div className="w-back-circle yellow-circle"></div>
+        <div className="blur w-blur2"></div>
       </div>
     </div>
   );

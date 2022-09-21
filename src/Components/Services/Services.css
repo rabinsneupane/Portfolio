@@ -41,9 +41,21 @@
   position: absolute;
 }
 
-@media screen and (max-width: 460px) {
+.s-blur1 {
+  background: var(--skyblue);
+  top: 14rem;
+  left: -8rem;
+}
+
+.s-blur2 {
+  background: var(--purple);
+  left: 19rem;
+  top: 9rem;
+}
+
+@media screen and (min-width: 320px) {
   .services {
-    margin: 12rem 0 0 0;
+    margin: 14rem 0 0 0;
     flex-direction: column;
   }
 
@@ -59,9 +71,17 @@
     display: flex;
     flex-direction: column;
     gap: 18rem;
+    margin-top: 10rem;
   }
 
   .cards > * {
-    position: static !important;
+    position: static;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .s-blur2 {
+    display: none;
   }
 }

@@ -112,9 +112,16 @@
   left: 18rem;
 }
 
-@media screen and (max-width: 460px) {
+.w-blur2 {
+  position: absolute;
+  background: var(--purple);
+  left:19rem;
+  top: -3rem;
+}
+
+@media screen and (min-width: 320px) {
   .works {
-    margin: 4rem 0.5rem 0;
+    margin: 5rem 0.5rem 0;
     flex-direction: column;
     gap: 4rem;
   }
@@ -124,8 +131,7 @@
   }
 
   .w-right {
-    transform: scale(0.8);
-    left: -0.5rem;
+    transform: scale(0.7);
   }
 
   .w-main-circle {
@@ -134,5 +140,9 @@
 
   .w-back-circle {
     left: 8rem;
+  }
+
+  .w-blur2{
+    display: none;
   }
 }

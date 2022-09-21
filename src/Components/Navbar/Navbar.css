@@ -6,7 +6,6 @@
 }
 
 .n-left {
-  flex: 1;
   align-items: center;
   display: flex;
   gap: 2rem;
@@ -18,10 +17,9 @@
 }
 
 .n-right {
-  flex: 1;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .n-list {
@@ -44,19 +42,17 @@
   flex: 2;
 }
 
-
-
-@media screen and (max-width: 460px) {
-
-  .n-wrapper{
-    margin:0 0.5rem
-  }
-  
-  .n-list {
-    display: none;
+@media screen and (min-width: 320px) {
+  .n-wrapper {
+    margin: 0 0.5rem;
+    display: block;
   }
 
-  .n-button {
+  .n-left {
+    justify-content: space-between;
+  }
+
+  .n-right {
     display: none;
   }
 }

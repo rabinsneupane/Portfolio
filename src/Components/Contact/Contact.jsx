@@ -41,6 +41,7 @@ const Contact = () => {
       <div className="c-left">
         <span style={{ color: darkMode ? "white" : "" }}>Get in touch</span>
         <span>Contact me</span>
+        <div className="blur c-blur1"></div>
       </div>
       <div className="c-right">
         <form ref={form} onSubmit={sendEmail}>
@@ -65,6 +66,7 @@ const Contact = () => {
           ></textarea>
           <input type="submit" value="Send" className="button ct-button" />
           <span>{done && "Thanks for Contacting me!"}</span>
+          <div className="blur c-blur2"></div>
         </form>
       </div>
     </div>

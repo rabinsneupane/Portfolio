@@ -56,6 +56,22 @@ const Intro = () => {
         <img src={Vector1} alt="" />
         <img src={Vector2} alt="" />
         <img src={Photo} alt="" />
+        <div
+          className="blur i-blur1"
+          style={{
+            background: "var(--purple)",
+            top: "-18%",
+            left: "56%",
+          }}
+        ></div>
+        <div
+          className="blur i-blur2"
+          style={{
+            background: "var(--skyblue)",
+            top: "15rem",
+            left: "-1rem",
+          }}
+        ></div>
       </div>
     </div>
   );

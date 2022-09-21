@@ -37,19 +37,39 @@ const Testimonials = () => {
         <span>What </span>
         <span>My Clients </span>
         <span>Says</span>
-        {/* blur here */}
+
+        <div className="blur t-blur1"></div>
+        <div className="blur t-blur2"></div>
       </div>
+
       <Swiper
         className="t-slider"
         modules={[Pagination]}
-        slidesPerView={3}
+        loop={true}
         pagination={{ clickable: true }}
         breakpoints={{
           320: {
             slidesPerView: 1,
           },
-          1080: {
+          460: {
+            spaceBetween: 180,
+            // slidesPerView: 2,
+          },
+          630: {
+            spaceBetween: 0,
+          },
+          700: {
+            spaceBetween: -20,
+          },
+          770: {
             slidesPerView: 2,
+            spaceBetween: 380,
+          },
+          900: {
+            spaceBetween: 280,
+          },
+          1080: {
+            slidesPerView: 3,
           },
         }}
       >

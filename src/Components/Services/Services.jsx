@@ -10,9 +10,10 @@ import { useContext } from "react";
 import { motion } from "framer-motion";
 
 const Services = () => {
-  const transition = { duration: 1.5, type: "spring" };
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
+
+  const transition = { duration: 1.5, type: "spring" };
   return (
     <div className="services" id="Services">
       <div className="s-left">
@@ -26,6 +27,7 @@ const Services = () => {
         <a href={Resume} download>
           <button className="button s-button">Download CV</button>
         </a>
+        <div className="blur s-blur1"></div>
       </div>
 
       <div className="s-right cards">
@@ -63,6 +65,7 @@ const Services = () => {
             body={"HTML, CSS, Tailwind, javaScript, React"}
           />
         </motion.div>
+        <div className="blur s-blur2"></div>
       </div>
     </div>
   );
