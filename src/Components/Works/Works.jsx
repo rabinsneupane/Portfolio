@@ -21,7 +21,7 @@ const Works = () => {
         <span>Brands & Clients</span>
         <span>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente
-          quas repudiandae ut <br />
+          quas repudiandae ut 
           dolorem atque, ea impedit animi nihil eius
         </span>
         <button className="button w-button">Hire me</button>

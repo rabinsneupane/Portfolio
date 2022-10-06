@@ -20,7 +20,7 @@ const Services = () => {
         <span style={{ color: darkMode ? "white" : "" }}>My</span>
         <span>Services</span>
         <span>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br />
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
           Sapiente quas repudiandae ut dolorem atque, ea impedit animi nihil
           eius
         </span>
@@ -56,7 +56,7 @@ const Services = () => {
         </motion.div>
         <motion.div
           initial={{ top: "3rem", left: "-8rem" }}
-          whileInView={{ top: "3rem", left: "4rem" }}
+          whileInView={{ top: "3rem", left: "5rem" }}
           transition={transition}
         >
           <Card

@@ -1,6 +1,7 @@
 .intro {
   display: flex;
-  margin: 10rem 3rem;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .i-left {
@@ -10,7 +11,7 @@
   gap: 2rem;
 }
 
-.i-name {
+.i-left .i-name {
   display: flex;
   flex-direction: column;
 }
@@ -53,25 +54,24 @@
 
 .i-right > * {
   position: absolute;
-  z-index: 1;
 }
 
 .i-right :nth-of-type(1) {
   transform: scale(0.7);
-  top: -9%;
-  left: 5%;
+  top: -4rem;
+  right: 9%;
 }
 
 .i-right :nth-of-type(2) {
-  top: -4.6rem;
-  left: 3rem;
   transform: scale(0.7);
+  top: -6rem;
+  right: 0%;
 }
 
 .i-right :nth-of-type(3) {
   width: 24.4rem;
-  top: -9rem;
-  left: 10rem;
+  top: -10.3rem;
+  right: 7rem;
 }
 
 .blur {
@@ -83,12 +83,14 @@
   filter: blur(92px);
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 576px) {
   .intro {
+    margin: 4rem 0.5rem;
     flex-direction: column;
-    align-items: center;
-    gap: 8rem;
-    margin: 1rem 0.5rem;
+  }
+
+  .i-name > :nth-child(2) {
+    font-size: 2.5rem;
   }
 
   .i-icons {
@@ -97,7 +99,75 @@
 
   .i-right {
     transform: scale(0.8);
-    left: -15rem;
+    top: 5rem;
+    left: 15rem;
+  }
+
+  .i-right :nth-of-type(1) {
     top: -4rem;
+    right: 4rem;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .intro {
+    margin: 5rem 2rem;
+    flex-direction: column;
+  }
+
+  .i-icons {
+    display: none;
+  }
+
+  .i-right {
+    top: 5rem;
+    left: 19.5rem;
+  }
+
+  .i-right :nth-of-type(1) {
+    top: -4rem;
+    right: 4rem;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .intro {
+    margin: 8rem 3rem;
+    flex-direction: row;
+  }
+
+  .i-left .i-name > :nth-child(3) {
+    width: 90%;
+  }
+
+  .i-right {
+    transform: scale(0.9);
+    top: -7rem;
+    left: 10.5rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .intro {
+    margin: 8rem 4rem;
+    flex-direction: row;
+  }
+
+  .i-name > :nth-child(3) {
+    width: 90%;
+  }
+
+  .i-right {
+    transform: scale(1);
+    top: -6rem;
+    left: 9.5rem;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .i-right {
+    transform: scale(1);
+    top: -4rem;
+    left: 5.5rem;
   }
 }

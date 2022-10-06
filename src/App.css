@@ -1,8 +1,7 @@
 :root {
   --yellow: #f5c32c;
   --orange: #fca61f;
-  --orange: rgb(252, 166, 31);
-  --black: #242d49;
+  --black: #202639;
   --gray: #788097;
   --blueCard: #ddf8fe;
   --purple: rgb(232, 200, 251);
@@ -15,6 +14,7 @@
 .App {
   overflow: hidden;
   color: var(--black);
+  box-sizing: border-box;
 }
 
 .button {
@@ -25,6 +25,7 @@
   padding: 10px 20px;
   background: linear-gradient(180deg, #fdc50f 26.71%, #fb982f 99.36%);
   box-shadow: 0 20px 24px 3px rgba(251, 161, 40, 0.42);
+  z-index: 9;
 }
 
 .button:hover {
@@ -34,8 +35,23 @@
   border: 1.5px solid var(--orange);
 }
 
-@media screen and (min-width: 320px) {
-  .App {
-    padding: 1rem 0.5rem 0;
+.nav-btn {
+  color: var(--orange);
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  z-index: 99;
+  display: none;
+}
+
+.nav-btn * {
+  font-size: 1.5rem;
+}
+
+
+@media screen and (max-width: 900px) {
+  .nav-btn {
+    display: block;
   }
 }

@@ -62,14 +62,17 @@
   top: 5rem;
   left: -3rem;
 }
+
 .w-main-circle > :nth-child(3) {
   top: 5rem;
   left: 6rem;
 }
+
 .w-main-circle > :nth-child(4) {
   top: 5rem;
   left: 15rem;
 }
+
 .w-main-circle > :nth-child(5) {
   top: 13rem;
   left: 6rem;
@@ -115,13 +118,13 @@
 .w-blur2 {
   position: absolute;
   background: var(--purple);
-  left:19rem;
+  left: 19rem;
   top: -3rem;
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 576px) {
   .works {
-    margin: 5rem 0.5rem 0;
+    margin: 4rem 0.5rem 0;
     flex-direction: column;
     gap: 4rem;
   }
@@ -132,17 +135,58 @@
 
   .w-right {
     transform: scale(0.7);
+    right: 6.7rem;
+    top: -3rem;
   }
 
-  .w-main-circle {
-    position: static;
+  .w-blur2 {
+    top: 13rem;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .works {
+    margin: 7rem 2rem;
+    flex-direction: column;
+    gap: 4rem;
   }
 
-  .w-back-circle {
-    left: 8rem;
+  .w-right {
+    transform: scale(1);
+    right: 10rem;
+    top: -4rem;
   }
 
-  .w-blur2{
-    display: none;
+  .w-blur2 {
+    top: 13rem;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .works {
+    margin: 12rem 3rem;
+    flex-direction: row;
+  }
+
+  .w-right {
+    top: -2rem;
+  }
+
+  .w-blur2 {
+    top: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .works {
+    margin: 12rem 4rem;
+  }
+
+  .w-left{
+    width: 50%;
+  }
+
+  .w-right {
+    right: 10rem;
   }
 }

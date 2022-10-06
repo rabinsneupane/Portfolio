@@ -8,15 +8,15 @@ import Vector2 from "../../img/Vector2.png";
 import Photo from "../../img/Photo.png";
 import { themeContext } from "../../Context";
 import { useContext } from "react";
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 
 const Intro = () => {
-  const transition = { duration: 2, type: "spring" };
+  // const transition = { duration: 2, type: "spring" };
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
 
   return (
-    <div className="intro">
+    <div className="intro" id="Intro">
       <div className="i-left">
         <div className="i-name">
           <span style={{ color: darkMode ? "white" : "" }}>Hi! I am</span>
@@ -26,7 +26,9 @@ const Intro = () => {
             designing and development, prdoucing the quality works.
           </span>
         </div>
+
         <button className="button i-button">Hire me</button>
+
         <div className="i-icons">
           <a
             href="https://github.com/rabinsneupane"
@@ -60,16 +62,16 @@ const Intro = () => {
           className="blur i-blur1"
           style={{
             background: "var(--purple)",
-            top: "-18%",
-            left: "56%",
+            top: "-10.3rem",
+            right: "7rem",
           }}
         ></div>
         <div
           className="blur i-blur2"
           style={{
             background: "var(--skyblue)",
-            top: "15rem",
-            left: "-1rem",
+            top: "12rem",
+            right: "20rem",
           }}
         ></div>
       </div>
