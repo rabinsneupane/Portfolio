@@ -55,7 +55,7 @@
 
 @media screen and (max-width: 576px) {
   .services {
-    margin: 29rem 0.5rem 3rem;
+    margin: -31rem 0.8rem 3rem;
     flex-direction: column;
   }
 
@@ -96,7 +96,7 @@
 
 @media screen and (min-width: 576px) {
   .services {
-    margin: 34rem 2rem 0 2rem;
+    margin: -33rem 1.5rem 0 1.5rem;
     flex-direction: column;
   }
 
@@ -105,7 +105,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    margin: 5rem auto;
+    margin: 4rem auto;
     gap: 2rem;
   }
 
@@ -122,21 +122,9 @@
   }
 }
 
-@media screen and (min-width: 790px) and (max-width: 900px) {
-  .cards {
-    gap: 6.3rem;
-  }
-
-  .cards div:nth-of-type(4) {
-    position: absolute;
-    top: 17rem;
-    left: 14rem;
-  }
-}
-
 @media screen and (min-width: 900px) {
   .services {
-    margin: 12rem 3rem;
+    margin: 4rem 3rem;
   }
 
   .cards {
@@ -153,7 +141,7 @@
 @media screen and (min-width: 1024px) {
   .services {
     flex-direction: row;
-    margin: 16rem 4rem;
+    margin: -13rem 4rem;
   }
 
   .s-left {
@@ -162,11 +150,18 @@
   }
 
   .cards {
+    top: 2rem;
     right: 4rem;
   }
 
   .cards div:nth-of-type(4) {
     top: 13rem;
     left: -3rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .services {
+    margin: -10rem 5rem;
   }
 }

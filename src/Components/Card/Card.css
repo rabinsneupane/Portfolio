@@ -32,13 +32,19 @@
 
 .c-button {
   background: white;
-  box-shadow: 0 19x 60px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 19x 60px rgba(0, 0, 0, 0.09);
   border-radius: 7px;
   border: none;
   padding: 10px;
-  font-size: 0.7rem;
+  font-size: 0.68rem;
   font-weight: bold;
   color: #5290fd;
   cursor: pointer;
 }
 
+.c-button:hover {
+  box-shadow: 0 19x 60px rgba(0, 0, 0, 0.15);
+  font-size: 0.7rem;
+  color: #4586f7;
+  transition: 0.2s all ease-in-out;
+}

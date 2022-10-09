@@ -44,6 +44,7 @@ const Testimonials = () => {
 
       <Swiper
         className="t-slider"
+        grabCursor={true}
         modules={[Pagination]}
         loop={true}
         pagination={{ clickable: true }}
@@ -52,24 +53,28 @@ const Testimonials = () => {
             slidesPerView: 1,
           },
           460: {
-            spaceBetween: 180,
-            // slidesPerView: 2,
-          },
-          630: {
-            spaceBetween: 0,
-          },
-          700: {
-            spaceBetween: -20,
-          },
-          770: {
             slidesPerView: 2,
-            spaceBetween: 380,
+            spaceBetween: 40,
           },
-          900: {
+          768: {
+            slidesPerView: 2,
             spaceBetween: 280,
           },
-          1080: {
+          850: {
+            slidesPerView: 2,
+            spaceBetween: 140,
+          },
+          1000: {
+            slidesPerView: 2,
+            spaceBetween: 40,
+          },
+          1150: {
             slidesPerView: 3,
+            spaceBetween: 380,
+          },
+          1350: {
+            slidesPerView: 3,
+            spaceBetween: 100,
           },
         }}
       >

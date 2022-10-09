@@ -26,37 +26,32 @@ const Portfolio = () => {
         modules={[Pagination]}
         pagination={{ clickable: true }}
         loop={true}
+        spaceBetween={10}
+        slidesPerView={5}
         breakpoints={{
           320: {
-            spaceBetween: 40,
-            slidesPerView: 1,
-          },
-          375: {
-            spaceBetween: 0,
-          },
-          425: {
-            spaceBetween: -10,
-          },
-          470: {
-            spaceBetween: 80,
-          },
-          560: {
-            spaceBetween: 0,
-          },
-          620: {
-            spaceBetween: 380,
             slidesPerView: 2,
+            spaceBetween: 300,
           },
-          800: {
-            spaceBetween: 180,
+          680: {
+            slidesPerView: 2,
+            spaceBetween: 200,
           },
-          1024: {
-            spaceBetween: 380,
+          780: {
+            slidesPerView: 2,
+            spaceBetween: 100,
+          },
+          900: {
+            slidesPerView: 3,
+            spaceBetween: 400,
+          },
+          1080: {
+            spaceBetween: 300,
             slidesPerView: 3,
           },
-          1400: {
-            slidesPerView: 4,
+          1300: {
             spaceBetween: 400,
+            slidesPerView: 4,
           },
         }}
       >

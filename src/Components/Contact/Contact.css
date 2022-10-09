@@ -62,7 +62,7 @@ form :nth-child(3) {
 @media screen and (max-width: 576px) {
   .contact {
     flex-direction: column;
-    margin: 4rem 0.5rem;
+    margin: 5rem 0.8rem 0;
   }
 
   .c-left span:nth-child(2) {
@@ -75,5 +75,49 @@ form :nth-child(3) {
 
   .c-blur1 {
     top: 2rem;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .contact {
+    margin: 5rem 1.5rem 0 1.5rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  form {
+    margin-left: 5rem;
+    width: 30rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contact {
+    margin: 4rem 2rem 0;
+    flex-direction: row;
+    align-items: start;
+  }
+
+  form {
+    margin-left: 0rem;
+    width: 117%;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .contact {
+    margin: 4rem 3rem 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .contact {
+    margin: 4rem 4rem 0;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .contact {
+    margin: 4rem 5rem 0;
   }
 }

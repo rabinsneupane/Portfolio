@@ -3,9 +3,7 @@ import "./Intro.css";
 import Github from "../../img/github.png";
 import LinkedIn from "../../img/linkedin.png";
 import Instagram from "../../img/instagram.png";
-import Vector1 from "../../img/Vector1.png";
-import Vector2 from "../../img/Vector2.png";
-import Photo from "../../img/Photo.png";
+import HeadPhoto from "../../img/HeadPhoto.png";
 import { themeContext } from "../../Context";
 import { useContext } from "react";
 // import { motion } from "framer-motion";
@@ -55,22 +53,20 @@ const Intro = () => {
       </div>
 
       <div className="i-right">
-        <img src={Vector1} alt="" />
-        <img src={Vector2} alt="" />
-        <img src={Photo} alt="" />
+        <img src={HeadPhoto} alt="" />
         <div
           className="blur i-blur1"
           style={{
             background: "var(--purple)",
-            top: "-10.3rem",
-            right: "7rem",
+            top: "7rem",
+            right: "10rem",
           }}
         ></div>
         <div
           className="blur i-blur2"
           style={{
             background: "var(--skyblue)",
-            top: "12rem",
+            top: "45rem",
             right: "20rem",
           }}
         ></div>

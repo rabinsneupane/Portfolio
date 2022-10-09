@@ -6,6 +6,7 @@
 
 .i-left {
   display: flex;
+  width: 100%;
   flex-direction: column;
   flex: 1;
   gap: 2rem;
@@ -44,34 +45,17 @@
 }
 
 .i-icons img {
-  transform: scale(0.6);
+  transform: scale(0.5);
+}
+
+.i-icons img:hover{
+  transform: scale(0.55);
+  transition: 0.2s all ease-in-out;
 }
 
 .i-right {
   flex: 1;
   position: relative;
-}
-
-.i-right > * {
-  position: absolute;
-}
-
-.i-right :nth-of-type(1) {
-  transform: scale(0.7);
-  top: -4rem;
-  right: 9%;
-}
-
-.i-right :nth-of-type(2) {
-  transform: scale(0.7);
-  top: -6rem;
-  right: 0%;
-}
-
-.i-right :nth-of-type(3) {
-  width: 24.4rem;
-  top: -10.3rem;
-  right: 7rem;
 }
 
 .blur {
@@ -85,7 +69,7 @@
 
 @media screen and (max-width: 576px) {
   .intro {
-    margin: 4rem 0.5rem;
+    margin: 3rem 0.8rem;
     flex-direction: column;
   }
 
@@ -98,20 +82,15 @@
   }
 
   .i-right {
-    transform: scale(0.8);
-    top: 5rem;
-    left: 15rem;
-  }
-
-  .i-right :nth-of-type(1) {
-    top: -4rem;
-    right: 4rem;
+    transform: scale(0.6);
+    top: -16rem;
+    left: 0.5rem;
   }
 }
 
 @media screen and (min-width: 576px) {
   .intro {
-    margin: 5rem 2rem;
+    margin: 5rem 1.5rem;
     flex-direction: column;
   }
 
@@ -120,54 +99,58 @@
   }
 
   .i-right {
-    top: 5rem;
-    left: 19.5rem;
-  }
-
-  .i-right :nth-of-type(1) {
-    top: -4rem;
-    right: 4rem;
+    transform: scale(0.6);
+    top: -16rem;
+    left: 0rem;
   }
 }
 
 @media screen and (min-width: 900px) {
   .intro {
-    margin: 8rem 3rem;
+    margin: -14rem 3rem;
     flex-direction: row;
   }
 
   .i-left .i-name > :nth-child(3) {
-    width: 90%;
+    width: 170%;
+  }
+
+  .i-icons {
+    display: block;
+    width: 170%;
   }
 
   .i-right {
-    transform: scale(0.9);
-    top: -7rem;
-    left: 10.5rem;
+    transform: scale(0.6);
+    top: 2rem;
+    left: 0.5rem;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .intro {
-    margin: 8rem 4rem;
+    margin: -12rem 4rem;
     flex-direction: row;
   }
 
-  .i-name > :nth-child(3) {
-    width: 90%;
-  }
-
   .i-right {
-    transform: scale(1);
-    top: -6rem;
-    left: 9.5rem;
+    transform: scale(0.6);
+    top: 0rem;
+    left: 7.5rem;
   }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1440px) {
+  .intro {
+    margin: -12rem 5rem;
+  }
+
+  .i-left .i-name > :nth-child(3) {
+    width: 120%;
+  }
+
   .i-right {
-    transform: scale(1);
-    top: -4rem;
+    top: 0rem;
     left: 5.5rem;
   }
 }

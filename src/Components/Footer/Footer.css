@@ -21,6 +21,11 @@
   cursor: pointer;
 }
 
+.f-content a:hover {
+  transform: scale(1.08);
+  transition: 0.2s all ease-in-out;
+}
+
 .footer p {
   position: absolute;
   color: var(--gray);
@@ -35,9 +40,9 @@
   gap: 2rem;
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 425px) {
   .f-content {
-    gap: 0.5rem;
+    gap: 0.3rem;
   }
 
   .f-content span {
@@ -45,10 +50,52 @@
   }
 
   .f-icons {
-    transform: scale(0.6);
+    transform: scale(0.5);
+    margin-bottom: 0.5rem;
   }
 
   .footer p {
     display: none;
+  }
+}
+
+@media screen and (min-width: 425px) {
+  .f-content {
+    gap: 0.5rem;
+  }
+
+  .f-content span {
+    font-size: 0.8rem;
+  }
+
+  .f-icons {
+    transform: scale(0.7);
+    margin-bottom: 0.5rem;
+  }
+
+  .footer p {
+    margin-bottom: 1rem;
+    top: 87%;
+    font-size: 0.6rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .f-content {
+    gap: 2rem;
+  }
+
+  .f-content span {
+    font-size: 1rem;
+  }
+
+  .f-icons {
+    transform: scale(1);
+  }
+
+  .footer p {
+    margin-bottom: 1rem;
+    top: 87%;
+    font-size: 0.7rem;
   }
 }

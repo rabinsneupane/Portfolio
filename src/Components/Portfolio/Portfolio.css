@@ -32,6 +32,12 @@
   border-radius: 18px;
 }
 
+.portfolio img:hover {
+  transform: scale(1.01);
+  filter: drop-shadow(-12px 15px 13px rgba(0, 0, 0, 0.3));
+  transition: 0.2s all ease-in-out;
+}
+
 .portfolio .swiper-pagination-bullet {
   background-color: var(--orange);
 }
@@ -42,8 +48,8 @@
 
 @media screen and (max-width: 576px) {
   .portfolio {
-    margin-top: 0.5rem;
-    justify-content: flex-start;
+    margin-top: -2rem;
+    justify-content: center;
   }
 
   .portfolio span:nth-child(1),
@@ -52,10 +58,41 @@
   }
 
   .portfolio .swiper {
-    height: 13rem;
+    height: 14rem;
+    margin: 3rem;
   }
 
   .portfolio img {
-    width: 16rem;
+    width: 18rem;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .portfolio {
+    margin-top: -2.5rem;
+  }
+
+  .portfolio span:nth-child(1) {
+    z-index: 0;
+  }
+
+  .portfolio .swiper {
+    margin: 3rem;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .portfolio {
+    margin-top: -6.5rem;
+  }
+
+  .portfolio .swiper {
+    margin: 4rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .portfolio {
+    margin-top: -7.5rem;
   }
 }
