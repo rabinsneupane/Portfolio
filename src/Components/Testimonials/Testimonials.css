@@ -45,7 +45,7 @@
 
 .testimonials:hover {
   transform: scale(1.01);
-  transition: 0.2s all ease-in-out;
+  transition:  all 0.3s  ease-in-out;
   box-shadow: 0px 19px 60px rgb(0 0 0 / 10%);
 }
 

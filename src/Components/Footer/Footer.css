@@ -23,7 +23,7 @@
 
 .f-content a:hover {
   transform: scale(1.08);
-  transition: 0.2s all ease-in-out;
+  transition:  all 0.3s  ease-in-out;
 }
 
 .footer p {
