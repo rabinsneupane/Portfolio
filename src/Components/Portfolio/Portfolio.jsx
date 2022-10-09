@@ -4,10 +4,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Pagination } from "swiper";
 import "swiper/css/pagination";
-import Sidebar from "../../img/sidebar.png";
-import Ecommerce from "../../img/ecommerce.png";
-import HOC from "../../img/hoc.png";
-import MusicApp from "../../img/musicapp.png";
+import Sidebar from "../../img/sidebar.webp";
+import Ecommerce from "../../img/ecommerce.webp";
+import HOC from "../../img/hoc.webp";
+import MusicApp from "../../img/musicapp.webp";
 import { themeContext } from "../../Context";
 import { useContext } from "react";
 

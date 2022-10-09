@@ -1,10 +1,10 @@
 import React from "react";
 import "./Works.css";
-import Amazon from "../../img/amazon.png";
-import Facebook from "../../img/Facebook.png";
-import Fiverr from "../../img/fiverr.png";
-import Shopify from "../../img/Shopify.png";
-import Upwork from "../../img/Upwork.png";
+import Amazon from "../../img/amazon.webp";
+import Facebook from "../../img/Facebook.webp";
+import Fiverr from "../../img/fiverr.webp";
+import Shopify from "../../img/Shopify.webp";
+import Upwork from "../../img/Upwork.webp";
 import { themeContext } from "../../Context";
 import { useContext } from "react";
 import { motion } from "framer-motion";

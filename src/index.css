@@ -1,6 +1,7 @@
 @font-face {
   font-family: Gumela;
   src: url(./fonts/Gumela\ Regular.otf);
+  font-display: swap;
 }
 * {
   font-family: "Gumela";

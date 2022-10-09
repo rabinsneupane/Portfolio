@@ -1,6 +1,6 @@
 import React from "react";
 import "./Footer.css";
-import Wave from "../../img/wave.png";
+import Wave from "../../img/wave.webp";
 import Github from "@iconscout/react-unicons/icons/uil-github";
 import LinkedIn from "@iconscout/react-unicons/icons/uil-linkedin";
 import Instagram from "@iconscout/react-unicons/icons/uil-instagram";

@@ -1,9 +1,9 @@
 import React from "react";
 import "./Intro.css";
-import Github from "../../img/github.png";
-import LinkedIn from "../../img/linkedin.png";
-import Instagram from "../../img/instagram.png";
-import HeadPhoto from "../../img/HeadPhoto.png";
+import Github from "../../img/github.webp";
+import LinkedIn from "../../img/linkedin.webp";
+import Instagram from "../../img/instagram.webp";
+import HeadPhoto from "../../img/HeadPhoto.webp";
 import { themeContext } from "../../Context";
 import { useContext } from "react";
 // import { motion } from "framer-motion";
@@ -18,7 +18,7 @@ const Intro = () => {
       <div className="i-left">
         <div className="i-name">
           <span style={{ color: darkMode ? "white" : "" }}>Hi! I am</span>
-          <span>Sammy Robbins</span>
+          <span>Robbins Neupane</span>
           <span>
             Frontend Designer and Develper with high level of experience in web
             designing and development, prdoucing the quality works.

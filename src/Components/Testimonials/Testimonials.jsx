@@ -1,10 +1,10 @@
 import React from "react";
 import "./Testimonials.css";
 import { Swiper, SwiperSlide } from "swiper/react";
-import profilePic1 from "../../img/profile1.jpg";
-import profilePic2 from "../../img/profile2.jpg";
-import profilePic3 from "../../img/profile3.jpg";
-import profilePic4 from "../../img/profile4.jpg";
+import profilePic1 from "../../img/profile1.webp";
+import profilePic2 from "../../img/profile2.webp";
+import profilePic3 from "../../img/profile3.webp";
+import profilePic4 from "../../img/profile4.webp";
 import { Pagination } from "swiper";
 import "swiper/css/pagination";
 

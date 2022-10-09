@@ -1,9 +1,9 @@
 import React from "react";
 import "./Services.css";
 import Card from "../Card/Card";
-import HeartEmoji from "../../img/heartemoji.png";
-import Glasses from "../../img/glasses.png";
-import Humble from "../../img/humble.png";
+import HeartEmoji from "../../img/heartemoji.webp";
+import Glasses from "../../img/glasses.webp";
+import Humble from "../../img/humble.webp";
 import Resume from "./Resume.pdf";
 import { themeContext } from "../../Context";
 import { useContext } from "react";
