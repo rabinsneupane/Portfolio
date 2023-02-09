@@ -1,4 +1,4 @@
-import { useContext, useTransition } from "react";
+import { useContext } from "react";
 import { MdDarkMode, MdLightMode } from "react-icons/md";
 import { themeContext } from "../../Context";
 import "./Toggle.css";
