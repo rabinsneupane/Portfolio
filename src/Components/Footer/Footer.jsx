@@ -1,9 +1,8 @@
 import React from "react";
-import "./Footer.css";
+import { AiFillGithub, AiFillInstagram } from "react-icons/ai";
+import { RiLinkedinBoxFill } from "react-icons/ri";
 import Wave from "../../img/wave.webp";
-import Github from "@iconscout/react-unicons/icons/uil-github";
-import LinkedIn from "@iconscout/react-unicons/icons/uil-linkedin";
-import Instagram from "@iconscout/react-unicons/icons/uil-instagram";
+import "./Footer.css";
 
 const Footer = () => {
   return (
@@ -13,25 +12,25 @@ const Footer = () => {
         <span>sammyrobbins00@gmail.com</span>
         <div className="f-icons">
           <a
-            href="https://github.com/rabinsneupane"
+            href="https://github.com/robbinsneupane"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Github color="white" size="3rem" />
+            <AiFillGithub className="img" />
           </a>
           <a
-            href="https://www.linkedin.com/in/rabins-neupane-0a25991b2/"
+            href="https://www.linkedin.com/in/robbinsneupane"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <LinkedIn color="white" size="3rem" />
+            <RiLinkedinBoxFill className="img" />
           </a>
           <a
-            href="https://www.instagram.com/rabinsneupane/?hl=en"
+            href="https://www.linkedin.com/in/robbinsneupane"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Instagram color="white" size="3rem" />
+            <AiFillInstagram className="img" />
           </a>
         </div>
       </div>

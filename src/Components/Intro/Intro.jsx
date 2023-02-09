@@ -1,11 +1,9 @@
-import React from "react";
-import "./Intro.css";
-import Github from "../../img/github.webp";
-import LinkedIn from "../../img/linkedin.webp";
-import Instagram from "../../img/instagram.webp";
-import HeadPhoto from "../../img/HeadPhoto.webp";
+import React, { useContext } from "react";
+import { AiFillGithub, AiFillInstagram } from "react-icons/ai";
+import { RiLinkedinBoxFill } from "react-icons/ri";
 import { themeContext } from "../../Context";
-import { useContext } from "react";
+import HeadPhoto from "../../img/HeadPhoto.webp";
+import "./Intro.css";
 // import { motion } from "framer-motion";
 
 const Intro = () => {
@@ -20,34 +18,38 @@ const Intro = () => {
           <span style={{ color: darkMode ? "white" : "" }}>Hi! I am</span>
           <span>Robbins Neupane</span>
           <span>
-            Frontend Designer and Develper with high level of experience in web
-            designing and development, prdoucing the quality works.
+            Skilled Frontend Designer and Developer with extensive experience in
+            creating beautiful and functional websites. Adept at combining
+            creativity and technical expertise to produce exceptional results.
+            Committed to staying up-to-date with the latest web design trends
+            and technologies to deliver projects that meet or exceed your
+            expectations.
           </span>
         </div>
 
-        <button className="button i-button">Hire me</button>
+        <button className="button i-button">Get in Touch</button>
 
         <div className="i-icons">
           <a
-            href="https://github.com/rabinsneupane"
+            href="https://www.instagram.com/robbinsneupane"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={Github} alt="Github icon" />
+            <AiFillInstagram className="img" />
           </a>
           <a
-            href="https://www.linkedin.com/in/rabins-neupane-0a25991b2/"
+            href="https://github.com/robbinsneupane"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={LinkedIn} alt="LinkedIn icon" />
+            <AiFillGithub className="img" />
           </a>
           <a
-            href="https://www.instagram.com/rabinsneupane/?hl=en"
+            href="https://www.linkedin.com/in/robbinsneupane"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={Instagram} alt="Instagram icon" />
+            <RiLinkedinBoxFill className="img" />
           </a>
         </div>
       </div>

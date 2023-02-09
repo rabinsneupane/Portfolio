@@ -1,22 +1,21 @@
-import React from "react";
-import "./Portfolio.css";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
+import React, { useContext } from "react";
 import { Pagination } from "swiper";
+import "swiper/css";
 import "swiper/css/pagination";
-import Sidebar from "../../img/sidebar.webp";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { themeContext } from "../../Context";
 import Ecommerce from "../../img/ecommerce.webp";
 import HOC from "../../img/hoc.webp";
 import MusicApp from "../../img/musicapp.webp";
-import { themeContext } from "../../Context";
-import { useContext } from "react";
+import Sidebar from "../../img/sidebar.webp";
+import "./Portfolio.css";
 
 const Portfolio = () => {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
 
   return (
-    <div className="portfolio" id="Projects">
+    <div className="pf-wrapper" id="Projects">
       <span style={{ color: darkMode ? "white" : "" }}>Recent Projects</span>
       <span>Portfolio</span>
 
@@ -26,46 +25,54 @@ const Portfolio = () => {
         modules={[Pagination]}
         pagination={{ clickable: true }}
         loop={true}
-        spaceBetween={10}
-        slidesPerView={5}
+        // spaceBetween={10}
+        // slidesPerView={5}
         breakpoints={{
-          320: {
-            slidesPerView: 2,
-            spaceBetween: 300,
+          460: {
+            slidesPerView: 1.1,
+            // spaceBetween: 40,
           },
-          680: {
+          768: {
             slidesPerView: 2,
-            spaceBetween: 200,
+            spaceBetween: 280,
           },
-          780: {
+          850: {
             slidesPerView: 2,
-            spaceBetween: 100,
+            spaceBetween: 140,
           },
-          900: {
+          1000: {
+            slidesPerView: 2,
+            spaceBetween: 40,
+          },
+          1150: {
             slidesPerView: 3,
-            spaceBetween: 400,
+            spaceBetween: 380,
           },
-          1080: {
-            spaceBetween: 300,
-            slidesPerView: 3,
-          },
-          1300: {
-            spaceBetween: 400,
+          1600: {
             slidesPerView: 4,
+            spaceBetween: 300,
           },
         }}
       >
         <SwiperSlide>
-          <img src={Sidebar} alt="" />
+          <div className="portfolio">
+            <img src={Sidebar} alt="" />
+          </div>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={Ecommerce} alt="" />
+          <div className="portfolio">
+            <img src={Ecommerce} alt="" />
+          </div>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={HOC} alt="" />
+          <div className="portfolio">
+            <img src={HOC} alt="" />
+          </div>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={MusicApp} alt="" />
+          <div className="portfolio">
+            <img src={MusicApp} alt="" />
+          </div>
         </SwiperSlide>
       </Swiper>
     </div>

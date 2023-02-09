@@ -1,34 +1,34 @@
 import React from "react";
-import "./Testimonials.css";
+import { Pagination } from "swiper";
+import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
 import profilePic1 from "../../img/profile1.webp";
 import profilePic2 from "../../img/profile2.webp";
 import profilePic3 from "../../img/profile3.webp";
 import profilePic4 from "../../img/profile4.webp";
-import { Pagination } from "swiper";
-import "swiper/css/pagination";
+import "./Testimonials.css";
 
 const Testimonials = () => {
   const clients = [
     {
       img: profilePic1,
       review:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet incidunt doloribus consectetur quia, illum explicabo libero laborum, maxime debitis hic possimus",
+        "He has solid skills and creates visually appealing, user-friendly web pages with responsive design. He have a keen eye for detail and can troubleshoot and fix bugs efficiently. He is so talented who consistently delivers high-quality work.",
     },
     {
       img: profilePic2,
       review:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet incidunt doloribus consectetur quia, illum explicabo libero laborum, maxime debitis hic possimus",
+        "He is a master developer, producing elegant and effective web pages every time. He is also a great communicator and problem-solver, making a valuable addition to the team.",
     },
     {
       img: profilePic3,
       review:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet incidunt doloribus consectetur quia, illum explicabo libero laborum, maxime debitis hic possimus",
+        "I can't express enough how grateful I am for his hard work and dedication to this project. The end result was a website that truly reflects my brand and delivers an outstanding user experience. I highly recommend this developer to anyone looking to improve their website's visual and user experience. Thank you!",
     },
     {
       img: profilePic4,
       review:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet incidunt doloribus consectetur quia, illum explicabo libero laborum, maxime debitis hic possimus",
+        "The developer was also instrumental in improving the user experience, making the site easy to navigate and interact with. He made sure that every element was optimized for maximum impact and that the site was responsive and accessible to users on all devices.",
     },
   ];
   return (
@@ -49,9 +49,6 @@ const Testimonials = () => {
         loop={true}
         pagination={{ clickable: true }}
         breakpoints={{
-          320: {
-            slidesPerView: 1,
-          },
           460: {
             slidesPerView: 2,
             spaceBetween: 40,
@@ -72,9 +69,9 @@ const Testimonials = () => {
             slidesPerView: 3,
             spaceBetween: 380,
           },
-          1350: {
-            slidesPerView: 3,
-            spaceBetween: 100,
+          1600: {
+            slidesPerView: 4,
+            spaceBetween: 220,
           },
         }}
       >

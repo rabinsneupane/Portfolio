@@ -1,13 +1,13 @@
-import React from "react";
-import "./Works.css";
+import { motion } from "framer-motion";
+import React, { useContext } from "react";
+import { themeContext } from "../../Context";
 import Amazon from "../../img/amazon.webp";
 import Facebook from "../../img/Facebook.webp";
 import Fiverr from "../../img/fiverr.webp";
 import Shopify from "../../img/Shopify.webp";
 import Upwork from "../../img/Upwork.webp";
-import { themeContext } from "../../Context";
-import { useContext } from "react";
-import { motion } from "framer-motion";
+import Resume from "../../Resume.pdf";
+import "./Works.css";
 
 const Works = () => {
   const transition = { duration: 3.5, type: "spring" };
@@ -20,11 +20,14 @@ const Works = () => {
         <span style={{ color: darkMode ? "white" : "" }}>My Works with</span>
         <span>Brands & Clients</span>
         <span>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente
-          quas repudiandae ut 
-          dolorem atque, ea impedit animi nihil eius
+          Leveraging cutting-edge technologies and creative problem-solving to
+          turn brands and clients' vision into reality. Consistently delivering
+          high-quality and innovative frontend development solutions with
+          precision, excellence, and timeliness
         </span>
-        <button className="button w-button">Hire me</button>
+        <a href={Resume} download>
+          <button className="button w-button">Download CV</button>
+        </a>
         <div className="blur s-blur1"></div>
       </div>
 

@@ -1,8 +1,8 @@
 :root {
   --yellow: #f5c32c;
   --orange: #fca61f;
-  --black: #202639;
-  --gray: #788097;
+  --black: #1f2028;
+  --gray: #8d95ac;
   --blueCard: #ddf8fe;
   --purple: rgb(232, 200, 251);
   --skyblue: #b0e6fb;
@@ -15,6 +15,8 @@
   overflow: hidden;
   color: var(--black);
   box-sizing: border-box;
+  scroll-behavior: smooth;
+  transition: all 0.5s;
 }
 
 .button {
@@ -24,15 +26,17 @@
   font-size: 1rem;
   padding: 10px 20px;
   background: linear-gradient(180deg, #fdc50f 26.71%, #fb982f 99.36%);
-  box-shadow: 0 20px 24px 3px rgba(251, 161, 40, 0.42);
+  box-shadow: 0 0.5rem 1rem 1px rgba(251, 161, 40, 0.2);
   z-index: 9;
+  transition: all 0.4s;
 }
 
 .button:hover {
   cursor: pointer;
   background: white;
   color: var(--orange);
-  border: 1.5px solid var(--orange);
+  outline: 1.5px solid var(--orange);
+  transition: all 0.4s;
 }
 
 .nav-btn {

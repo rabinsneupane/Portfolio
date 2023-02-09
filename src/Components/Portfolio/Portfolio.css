@@ -1,4 +1,4 @@
-.portfolio {
+.pf-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -6,93 +6,102 @@
   margin-top: 9rem;
 }
 
-.portfolio span:nth-child(1) {
+.pf-wrapper span:nth-child(1) {
   color: var(--black);
   font-weight: bold;
   font-size: 2rem;
   margin-top: 4rem;
 }
 
-.portfolio span:nth-child(2) {
+.pf-wrapper span:nth-child(2) {
   color: var(--orange);
   font-weight: bold;
   font-size: 2.5rem;
 }
 
-.portfolio .swiper {
+.pf-wrapper .swiper {
   overflow: visible !important;
   margin-top: 4rem;
   width: 100%;
+  height: 20.5rem;
+}
+
+.portfolio {
+  width: 25rem;
   height: 16rem;
 }
 
 .portfolio img {
-  width: 20rem;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   box-shadow: 0 19px 60px rgba(0, 0, 0, 0.2);
-  border-radius: 18px;
+  border-radius: 1rem;
+  transition: all 0.3s ease-in-out;
 }
 
 .portfolio img:hover {
   transform: scale(1.01);
-  box-shadow: 0 19px 60px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 1rem 3rem rgba(0, 15, 42, 0.3);
   transition: all 0.3s ease-in-out;
 }
 
-.portfolio .swiper-pagination-bullet {
+.pf-wrapper .swiper-pagination-bullet {
   background-color: var(--orange);
 }
 
-.portfolio .swiper-pagination-bullet-active {
+.pf-wrapper .swiper-pagination-bullet-active {
   background: var(--orange);
 }
 
 @media screen and (max-width: 576px) {
-  .portfolio {
+  .pf-wrapper {
     margin-top: -2rem;
     justify-content: center;
   }
 
-  .portfolio span:nth-child(1),
-  .portfolio span:nth-child(2) {
+  .pf-wrapper span:nth-child(1),
+  .pf-wrapper span:nth-child(2) {
     font-size: 2rem;
   }
 
-  .portfolio .swiper {
-    height: 14rem;
+  .pf-wrapper .swiper {
+    height: 20rem;
     margin: 3rem;
   }
 
-  .portfolio img {
-    width: 18rem;
+  .portfolio {
+    width: 25rem;
+    height: 16rem;
   }
 }
 
 @media screen and (min-width: 576px) {
-  .portfolio {
+  .pf-wrapper {
     margin-top: -2.5rem;
   }
 
-  .portfolio span:nth-child(1) {
+  .pf-wrapper span:nth-child(1) {
     z-index: 0;
   }
 
-  .portfolio .swiper {
+  .pf-wrapper .swiper {
     margin: 3rem;
   }
 }
 
 @media screen and (min-width: 900px) {
-  .portfolio {
+  .pf-wrapper {
     margin-top: -6.5rem;
   }
 
-  .portfolio .swiper {
+  .pf-wrapper .swiper {
     margin: 4rem;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .portfolio {
+  .pf-wrapper {
     margin-top: -7.5rem;
   }
 }

@@ -1,15 +1,15 @@
+import { useContext } from "react";
 import "./App.css";
+import Contact from "./Components/Contact/Contact";
+import Experience from "./Components/Experience/Experience";
+import Footer from "./Components/Footer/Footer";
 import Intro from "./Components/Intro/Intro";
 import Navbar from "./Components/Navbar/Navbar";
-import Services from "./Components/Services/Services";
-import Experience from "./Components/Experience/Experience";
-import Works from "./Components/Works/Works";
 import Portfolio from "./Components/Portfolio/Portfolio";
+import Services from "./Components/Services/Services";
 import Testimonials from "./Components/Testimonials/Testimonials";
-import Contact from "./Components/Contact/Contact";
-import Footer from "./Components/Footer/Footer";
+import Works from "./Components/Works/Works";
 import { themeContext } from "./Context";
-import { useContext } from "react";
 
 function App() {
   const theme = useContext(themeContext);
@@ -18,7 +18,7 @@ function App() {
     <div
       className="App"
       style={{
-        background: darkMode ? "black" : "",
+        background: darkMode ? "#1f2028" : "",
         color: darkMode ? "white" : "",
       }}
     >

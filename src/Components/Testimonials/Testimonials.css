@@ -37,16 +37,17 @@
   padding: 1.5rem;
   width: 20rem;
   height: 12rem;
-  background: rgba(255, 255, 255, 0.26);
+  background: rgba(255, 255, 255, 0.15);
   border: 7px solid var(--blueCard);
   box-shadow: var(--boxShadow);
-  border-radius: 20px;
+  border-radius: 1rem;
+  transition: 0.3s ease-in;
 }
 
 .testimonials:hover {
   transform: scale(1.01);
-  transition:  all 0.3s  ease-in-out;
-  box-shadow: 0px 19px 60px rgb(0 0 0 / 10%);
+  box-shadow: 0px 1rem 2rem rgba(2, 22, 47, 0.1);
+  transition: all 0.3s ease-in-out;
 }
 
 .testimonials img {
@@ -79,6 +80,7 @@
 @media screen and (max-width: 768px) {
   .t-wrapper {
     margin-top: 2rem;
+    padding: 0 1rem;
   }
 
   .t-heading > * {

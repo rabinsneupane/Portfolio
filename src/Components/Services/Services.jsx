@@ -1,13 +1,11 @@
-import React from "react";
-import "./Services.css";
-import Card from "../Card/Card";
-import HeartEmoji from "../../img/heartemoji.webp";
-import Glasses from "../../img/glasses.webp";
-import Humble from "../../img/humble.webp";
-import Resume from "./Resume.pdf";
-import { themeContext } from "../../Context";
-import { useContext } from "react";
 import { motion } from "framer-motion";
+import React, { useContext } from "react";
+import { BiCodeAlt } from "react-icons/bi";
+import { CgUserlane } from "react-icons/cg";
+import { MdDesignServices } from "react-icons/md";
+import { themeContext } from "../../Context";
+import Card from "../Card/Card";
+import "./Services.css";
 
 const Services = () => {
   const theme = useContext(themeContext);
@@ -20,13 +18,12 @@ const Services = () => {
         <span style={{ color: darkMode ? "white" : "" }}>My</span>
         <span>Services</span>
         <span>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-          Sapiente quas repudiandae ut dolorem atque, ea impedit animi nihil
-          eius
+          Unlocking Your Business Potential with Premium Frontend Design and
+          Development Services: Driving Your Online Presence Forward with
+          Customized, High-Performance Solutions and Unmatched User Experience
         </span>
-        <a href={Resume} download>
-          <button className="button s-button">Download CV</button>
-        </a>
+        <button className="button s-button">Hire Me</button>
+
         <div className="blur s-blur1"></div>
       </div>
 
@@ -37,9 +34,9 @@ const Services = () => {
           transition={transition}
         >
           <Card
-            emoji={HeartEmoji}
+            icon={<MdDesignServices />}
             title={"Design"}
-            body={"Figma, Photoshop, Adobe Xd, Illustrator"}
+            body={"Photoshop, Indesign, Illustrator, Canva"}
           />
         </motion.div>
 
@@ -49,9 +46,9 @@ const Services = () => {
           transition={transition}
         >
           <Card
-            emoji={Humble}
+            icon={<CgUserlane />}
             title={"UI/UX"}
-            body={"Lorem ipsum dolor sit amet, consectetur adipisicing elit."}
+            body={"Figma, Adobe XD, Sketch"}
           />
         </motion.div>
         <motion.div
@@ -60,9 +57,9 @@ const Services = () => {
           transition={transition}
         >
           <Card
-            emoji={Glasses}
-            title={"Developer"}
-            body={"HTML, CSS, Tailwind, javaScript, React"}
+            icon={<BiCodeAlt />}
+            title={"Develop"}
+            body={"HTML, CSS, Tailwind CSS, JavaScript, React"}
           />
         </motion.div>
         <div className="blur s-blur2"></div>

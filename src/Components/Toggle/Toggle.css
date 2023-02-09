@@ -6,6 +6,7 @@
   border-radius: 1rem;
   position: relative;
   cursor: pointer;
+  padding: 0.1rem 0.1rem 0.1rem 0;
 }
 
 .toggle * {

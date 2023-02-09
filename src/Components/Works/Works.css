@@ -27,10 +27,15 @@
   font-weight: 100;
   font-size: 0.9rem;
   margin-top: 0.5rem;
+  line-height: 1.3rem;
+  max-width: 90%;
 }
 
+.w-left a {
+  width: 1rem;
+}
 .w-button {
-  width: 6rem;
+  width: 9rem;
   margin-top: 2rem;
 }
 
