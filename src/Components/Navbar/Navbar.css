@@ -19,6 +19,11 @@
   z-index: 99;
 }
 
+.n-wrapper.fixed .n-links li,
+.n-wrapper.fixed .n-name {
+  color: white;
+}
+
 .n-name {
   font-size: 1.3rem;
   font-weight: bold;
@@ -47,12 +52,13 @@
 @media screen and (max-width: 576px) {
   .n-wrapper {
     height: 4rem;
-    margin: 0 0.8rem;
+    margin: 0 0.8rem 1rem 0.8rem;
+    padding: 1rem 0;
     position: relative;
   }
 
   .n-wrapper.fixed {
-    padding: 0 0.8rem;
+    padding: 0.8rem;
   }
 
   .n-links {
@@ -99,11 +105,12 @@
 @media screen and (min-width: 576px) {
   .n-wrapper {
     height: 4rem;
-    margin: 0 1.5rem;
+    margin: 0 0.8rem;
+    position: relative;
   }
 
   .n-wrapper.fixed {
-    padding: 0 1.5rem;
+    padding: 0 0.8rem;
   }
 
   .n-links {
@@ -111,32 +118,35 @@
   }
 
   .n-links-mobile {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transition: all 0.5s ease-in-out;
-  }
-
-  .n-links-mobile ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0;
-    list-style: none;
     position: absolute;
-    background: var(--skyblue);
     height: 100vh;
-    top: -3%;
-    right: 0%;
-    gap: 1.7rem;
-    padding: 10rem 3.5rem;
-    z-index: 9;
-    transition: all 0.5s ease-in-out;
+    width: 40vw;
+    top: 0;
+    right: -1rem;
+    background-color: #1a89e3;
+    color: white;
+    text-align: center;
+    z-index: 11;
+    animation: slideIn 0.3s linear;
+  }
+  .n-links-mobile ul {
+    padding: 1rem;
+    margin: 6rem auto;
+  }
+  .n-links-mobile ul li {
+    list-style: none;
+    line-height: 2rem;
+    font-size: 0.9rem;
+    cursor: pointer;
+    padding: 0.1rem 0.2rem;
+    transition: all 0.3s;
   }
 
-  .n-links-mobile ul li {
-    color: var(--black);
-    font-size: 1.3rem;
+  .n-links-mobile ul li:hover {
+    background-color: rgba(225, 225, 225, 0.2);
+    border-radius: 0.5rem;
+    padding: 0.1rem 0.2rem;
+    transition: all 0.3s;
   }
 
   .n-button {
@@ -147,7 +157,6 @@
 @media screen and (min-width: 900px) {
   .n-wrapper {
     margin: 0 3rem;
-    /* height: 6rem; */
   }
 
   .n-wrapper.fixed {
@@ -198,13 +207,13 @@
   }
 }
 
-  @keyframes slideIn {
-    from {
-      transform: translate(100%);
-      opacity: 0;
-    }
-    to {
-      transform: translate(0%);
-      opacity: 1;
-    }
+@keyframes slideIn {
+  from {
+    transform: translate(100%);
+    opacity: 0;
   }
+  to {
+    transform: translate(0%);
+    opacity: 1;
+  }
+}
