@@ -5,6 +5,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  transition: 0.3s;
 }
 
 .n-wrapper.fixed {
@@ -17,6 +18,7 @@
   background-color: #1a89e3;
   box-shadow: var(--boxShadow);
   z-index: 99;
+  transition: 0.3s;
 }
 
 .n-wrapper.fixed .n-links li,

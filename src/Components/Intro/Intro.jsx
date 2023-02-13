@@ -1,13 +1,13 @@
+import { motion } from "framer-motion";
 import React, { useContext } from "react";
 import { AiFillGithub, AiFillInstagram } from "react-icons/ai";
 import { RiLinkedinBoxFill } from "react-icons/ri";
 import { themeContext } from "../../Context";
 import HeadPhoto from "../../img/HeadPhoto.webp";
 import "./Intro.css";
-// import { motion } from "framer-motion";
 
 const Intro = () => {
-  // const transition = { duration: 2, type: "spring" };
+  const transition = { duration: 2, type: "spring" };
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
 
@@ -54,7 +54,12 @@ const Intro = () => {
         </div>
       </div>
 
-      <div className="i-right">
+      <motion.div
+        initial={{ left: "20rem" }}
+        whileInView={{ left: "auto" }}
+        transition={transition}
+        className="i-right"
+      >
         <img src={HeadPhoto} alt="" />
         <div
           className="blur i-blur1"
@@ -72,7 +77,7 @@ const Intro = () => {
             right: "20rem",
           }}
         ></div>
-      </div>
+      </motion.div>
     </div>
   );
 };
