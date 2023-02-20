@@ -4,10 +4,12 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { themeContext } from "../../Context";
-import Ecommerce from "../../img/ecommerce.webp";
-import HOC from "../../img/hoc.webp";
-import MusicApp from "../../img/musicapp.webp";
-import Sidebar from "../../img/sidebar.webp";
+import fnThumbnail from "../../img/fashionninza.png";
+import IMDbThumbnail from "../../img/imdbClone.png";
+import LorukiThumbnail from "../../img/loruki.png";
+import ManageThumbnail from "../../img/manage.png";
+import PortfolioThumbnail from "../../img/portfolio.png";
+
 import "./Portfolio.css";
 
 const Portfolio = () => {
@@ -25,8 +27,6 @@ const Portfolio = () => {
         modules={[Pagination]}
         pagination={{ clickable: true }}
         loop={true}
-        // spaceBetween={10}
-        // slidesPerView={5}
         breakpoints={{
           460: {
             slidesPerView: 1.1,
@@ -56,22 +56,46 @@ const Portfolio = () => {
       >
         <SwiperSlide>
           <div className="portfolio">
-            <img src={Sidebar} alt="" />
+            <a
+              href="https://imdbwebsiteclone.netlify.app"
+              target={"_blank"}
+              rel={"noreferrer"}
+            >
+              <img src={IMDbThumbnail} alt="" />
+            </a>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="portfolio">
-            <img src={Ecommerce} alt="" />
+            <a
+              href="https://fashionninja.netlify.app"
+              target={"_blank"}
+              rel={"noreferrer"}
+            >
+              <img src={fnThumbnail} alt="" />
+            </a>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="portfolio">
-            <img src={HOC} alt="" />
+            <a
+              href="https://lorukiwebcloud.netlify.app"
+              target={"_blank"}
+              rel={"noreferrer"}
+            >
+              <img src={LorukiThumbnail} alt="" />
+            </a>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="portfolio">
-            <img src={MusicApp} alt="" />
+            <a
+              href="https://managesaasplatrorm.netlify.app"
+              target={"_blank"}
+              rel={"noreferrer"}
+            >
+              <img src={ManageThumbnail} alt="" />
+            </a>
           </div>
         </SwiperSlide>
       </Swiper>
