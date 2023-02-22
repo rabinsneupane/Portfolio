@@ -8,7 +8,6 @@ import fnThumbnail from "../../img/fashionninza.png";
 import IMDbThumbnail from "../../img/imdbClone.png";
 import LorukiThumbnail from "../../img/loruki.png";
 import ManageThumbnail from "../../img/manage.png";
-import PortfolioThumbnail from "../../img/portfolio.png";
 
 import "./Portfolio.css";
 
