@@ -6,6 +6,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { themeContext } from "../../Context";
 import fnThumbnail from "../../img/fashionninza.png";
 import findMoviezThumbnail from "../../img/findMoviez.png";
+import FriendzyThumbnail from "../../img/friendzy.png";
 import furnitureThumbnail from "../../img/furniture.png";
 import gpt3Thumbnail from "../../img/gpt3.png";
 import IMDbThumbnail from "../../img/imdbClone.png";
@@ -59,33 +60,11 @@ const Portfolio = () => {
         <SwiperSlide>
           <div className="portfolio">
             <a
-              href="https://imdbwebsiteclone.netlify.app"
+              href="https://friendzy.netlify.app/"
               target={"_blank"}
               rel={"noreferrer"}
             >
-              <img src={IMDbThumbnail} alt="" />
-            </a>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="portfolio">
-            <a
-              href="https://fashionninja.netlify.app"
-              target={"_blank"}
-              rel={"noreferrer"}
-            >
-              <img src={fnThumbnail} alt="" />
-            </a>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="portfolio">
-            <a
-              href="https://lorukiwebcloud.netlify.app"
-              target={"_blank"}
-              rel={"noreferrer"}
-            >
-              <img src={LorukiThumbnail} alt="" />
+              <img src={FriendzyThumbnail} alt="" />
             </a>
           </div>
         </SwiperSlide>
@@ -103,11 +82,44 @@ const Portfolio = () => {
         <SwiperSlide>
           <div className="portfolio">
             <a
-              href="https://homeyfurniture.netlify.app/"
+              href="https://chatgpt3openai.netlify.app"
               target={"_blank"}
               rel={"noreferrer"}
             >
-              <img src={furnitureThumbnail} alt="" />
+              <img src={gpt3Thumbnail} alt="" />
+            </a>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="portfolio">
+            <a
+              href="https://fashionninja.netlify.app"
+              target={"_blank"}
+              rel={"noreferrer"}
+            >
+              <img src={fnThumbnail} alt="" />
+            </a>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="portfolio">
+            <a
+              href="https://imdbwebsiteclone.netlify.app"
+              target={"_blank"}
+              rel={"noreferrer"}
+            >
+              <img src={IMDbThumbnail} alt="" />
+            </a>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="portfolio">
+            <a
+              href="https://lorukiwebcloud.netlify.app"
+              target={"_blank"}
+              rel={"noreferrer"}
+            >
+              <img src={LorukiThumbnail} alt="" />
             </a>
           </div>
         </SwiperSlide>
@@ -125,11 +137,11 @@ const Portfolio = () => {
         <SwiperSlide>
           <div className="portfolio">
             <a
-              href="https://chatgpt3openai.netlify.app"
+              href="https://homeyfurniture.netlify.app/"
               target={"_blank"}
               rel={"noreferrer"}
             >
-              <img src={gpt3Thumbnail} alt="" />
+              <img src={furnitureThumbnail} alt="" />
             </a>
           </div>
         </SwiperSlide>

@@ -1,11 +1,12 @@
 import { motion } from "framer-motion";
 import React, { useContext } from "react";
 import { themeContext } from "../../Context";
-import Amazon from "../../img/amazon.webp";
+// import Amazon from "../../img/amazon.webp";
 import Facebook from "../../img/Facebook.webp";
 import Fiverr from "../../img/fiverr.webp";
 import Shopify from "../../img/Shopify.webp";
 import Upwork from "../../img/Upwork.webp";
+import Wordpress from "../../img/Wordpress.png";
 import Resume from "../../Resume.pdf";
 import "./Works.css";
 
@@ -47,7 +48,7 @@ const Works = () => {
             <img src={Fiverr} alt="" />
           </div>
           <div className="w-sec-circle">
-            <img src={Amazon} alt="" />
+            <img src={Wordpress} alt="" />
           </div>
           <div className="w-sec-circle">
             <img src={Shopify} alt="" />

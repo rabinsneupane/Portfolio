@@ -3,7 +3,7 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-scroll";
 import Toggle from "../Toggle/Toggle";
 import "./Navbar.css";
-
+import Logo from "./RN.svg";
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   const [stickyNav, setStickyNav] = useState(false);
@@ -30,7 +30,7 @@ const Navbar = () => {
 
   return (
     <div className={stickyNav ? "n-wrapper fixed" : "n-wrapper"} id="Navbar">
-      <h1 className="n-name">SR</h1>
+      <img src={Logo} alt="" />
       <Toggle />
 
       <div ref={menuRef} className={toggle ? "n-links-mobile " : "n-links"}>
