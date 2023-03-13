@@ -2,15 +2,21 @@
   height: 4rem;
   padding: 1rem 0;
   margin: 0 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 .n-wrapper img {
   width: 2rem;
 }
-
 .n-wrapper.fixed {
   margin: 0;
   padding: 1rem 0;
@@ -21,39 +27,44 @@
   background-color: #1a89e3;
   box-shadow: var(--boxShadow);
   z-index: 99;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-
 .n-wrapper.fixed .n-links li,
 .n-wrapper.fixed .n-name {
   color: white;
 }
-
 .n-name {
   font-size: 1.3rem;
   font-weight: bold;
 }
-
 .n-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
-
 .n-links ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 2rem;
   list-style: none;
   margin-right: 2rem;
+  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-
 .n-links ul li:hover {
   color: var(--orange);
   cursor: pointer;
+  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-
 @media screen and (max-width: 576px) {
   .n-wrapper {
     height: 4rem;
@@ -61,15 +72,12 @@
     padding: 1rem 0;
     position: relative;
   }
-
   .n-wrapper.fixed {
     padding: 0.8rem;
   }
-
   .n-links {
     display: none;
   }
-
   .n-links-mobile {
     position: absolute;
     height: 100vh;
@@ -80,6 +88,7 @@
     color: white;
     text-align: center;
     z-index: 11;
+    -webkit-animation: slideIn 0.3s linear;
     animation: slideIn 0.3s linear;
   }
   .n-links-mobile ul {
@@ -92,36 +101,32 @@
     font-size: 0.9rem;
     cursor: pointer;
     padding: 0.1rem 0.2rem;
+    -webkit-transition: all 0.3s;
     transition: all 0.3s;
   }
-
   .n-links-mobile ul li:hover {
     background-color: rgba(225, 225, 225, 0.2);
     border-radius: 0.5rem;
     padding: 0.1rem 0.2rem;
+    -webkit-transition: all 0.3s;
     transition: all 0.3s;
   }
-
   .n-button {
     display: none;
   }
 }
-
 @media screen and (min-width: 576px) {
   .n-wrapper {
     height: 4rem;
     margin: 0 0.8rem;
     position: relative;
   }
-
   .n-wrapper.fixed {
     padding: 0 0.8rem;
   }
-
   .n-links {
     display: none;
   }
-
   .n-links-mobile {
     position: absolute;
     height: 100vh;
@@ -132,6 +137,7 @@
     color: white;
     text-align: center;
     z-index: 11;
+    -webkit-animation: slideIn 0.3s linear;
     animation: slideIn 0.3s linear;
   }
   .n-links-mobile ul {
@@ -144,53 +150,47 @@
     font-size: 0.9rem;
     cursor: pointer;
     padding: 0.1rem 0.2rem;
+    -webkit-transition: all 0.3s;
     transition: all 0.3s;
   }
-
   .n-links-mobile ul li:hover {
     background-color: rgba(225, 225, 225, 0.2);
     border-radius: 0.5rem;
     padding: 0.1rem 0.2rem;
+    -webkit-transition: all 0.3s;
     transition: all 0.3s;
   }
-
   .n-button {
     display: none;
   }
 }
-
 @media screen and (min-width: 900px) {
   .n-wrapper {
     margin: 0 3rem;
   }
-
   .n-wrapper.fixed {
     padding: 0 3rem;
   }
-
   .n-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
-
   .n-links ul {
     margin: 0;
   }
-
   .n-button {
     display: none;
   }
 }
-
 @media screen and (min-width: 1024px) {
   .n-wrapper {
     margin: 0 4rem;
   }
-
   .n-wrapper.fixed {
     padding: 0 4rem;
   }
 }
-
 @media screen and (min-width: 1080px) {
   .n-links ul {
     margin-right: 2rem;
@@ -199,25 +199,36 @@
     display: block;
   }
 }
-
 @media screen and (min-width: 1440px) {
   .n-wrapper {
     height: 4rem;
     padding: 1rem 0;
     margin: 0 5rem;
   }
-
   .n-wrapper.fixed {
     padding: 0 5rem;
   }
 }
-
-@keyframes slideIn {
+@-webkit-keyframes slideIn {
   from {
+    -webkit-transform: translate(100%);
     transform: translate(100%);
     opacity: 0;
   }
   to {
+    -webkit-transform: translate(0%);
+    transform: translate(0%);
+    opacity: 1;
+  }
+}
+@keyframes slideIn {
+  from {
+    -webkit-transform: translate(100%);
+    transform: translate(100%);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translate(0%);
     transform: translate(0%);
     opacity: 1;
   }

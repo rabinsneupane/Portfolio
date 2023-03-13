@@ -1,14 +1,24 @@
 .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   margin: -0.5rem -3.5rem;
   position: relative;
 }
-
 .f-content {
   position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   justify-content: center;
   color: #fff;
@@ -16,89 +26,81 @@
   gap: 2rem;
   margin-top: 4rem;
 }
-
 .f-content a {
   cursor: pointer;
   color: white;
+  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-
 .f-content a:hover {
+  -webkit-transform: scale(0.9);
   transform: scale(0.9);
+  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-
 .img {
   font-size: 2.5rem;
 }
-
 .footer p {
   position: absolute;
   color: var(--gray);
   font-size: 0.7rem;
   top: 90%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-
 .f-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 2rem;
 }
-
 @media screen and (max-width: 425px) {
   .f-content {
     gap: 0.3rem;
   }
-
   .f-content span {
     font-size: 0.7rem;
   }
-
   .f-icons {
+    -webkit-transform: scale(0.5);
     transform: scale(0.5);
     margin-bottom: 0.5rem;
   }
-
   .footer p {
     display: none;
   }
 }
-
 @media screen and (min-width: 425px) {
   .f-content {
     gap: 0.5rem;
   }
-
   .f-content span {
     font-size: 0.8rem;
   }
-
   .f-icons {
+    -webkit-transform: scale(0.7);
     transform: scale(0.7);
     margin-bottom: 0.5rem;
   }
-
   .footer p {
     margin-bottom: 1rem;
     top: 87%;
     font-size: 0.6rem;
   }
 }
-
 @media screen and (min-width: 768px) {
   .f-content {
     gap: 2rem;
   }
-
   .f-content span {
     font-size: 1rem;
   }
-
   .f-icons {
+    -webkit-transform: scale(1);
     transform: scale(1);
   }
-
   .footer p {
     margin-bottom: 1rem;
     top: 87%;

@@ -1,38 +1,44 @@
 .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 4rem 0 0 5rem;
   gap: 2rem;
   position: relative;
 }
-
 .c-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   flex: 1;
 }
-
 .c-left span:nth-of-type(1) {
   color: var(--black);
   font-weight: bold;
   font-size: 2rem;
 }
-
 .c-left span:nth-child(2) {
   color: var(--orange);
   font-weight: bold;
   font-size: 2.5rem;
 }
-
 .c-right {
   flex: 1;
 }
-
 form {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   gap: 2rem;
 }
-
 form :nth-child(1),
 form :nth-child(2),
 form :nth-child(3) {
@@ -42,80 +48,79 @@ form :nth-child(3) {
   outline: none;
   width: 80%;
 }
-
 .ct-button {
   width: 6rem;
 }
-
 .c-blur1 {
   background: var(--skyblue);
   left: -10rem;
   top: 7rem;
 }
-
 .c-blur2 {
   background: var(--purple);
   left: 42rem;
   top: 2rem;
 }
-
 @media screen and (max-width: 576px) {
   .contact {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     margin: 5rem 0.8rem 0;
   }
-
   .c-left span:nth-child(2) {
     font-size: 2rem;
   }
-
   form .user {
     width: 93%;
   }
-
   .c-blur1 {
     top: 2rem;
   }
 }
-
 @media screen and (min-width: 576px) {
   .contact {
-    margin: 5rem 1.5rem 0 1.5rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    margin: 5rem 1.5rem 0 1.5rem;
   }
-
   form {
     margin-left: 5rem;
     width: 30rem;
   }
 }
-
 @media screen and (min-width: 768px) {
   .contact {
     margin: 4rem 2rem 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
-    align-items: start;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
   }
-
   form {
     margin-left: 0rem;
     width: 117%;
   }
 }
-
 @media screen and (min-width: 900px) {
   .contact {
     margin: 4rem 3rem 0;
   }
 }
-
 @media screen and (min-width: 1024px) {
   .contact {
     margin: 4rem 4rem 0;
   }
 }
-
 @media screen and (min-width: 1440px) {
   .contact {
     margin: 4rem 5rem 0;

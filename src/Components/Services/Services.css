@@ -1,25 +1,31 @@
 .services {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
 }
-
 .s-left {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
   flex-direction: column;
   position: relative;
 }
-
 .s-left > :nth-child(1) {
   color: var(--black);
   font-weight: bold;
   font-size: 2rem;
 }
-
 .s-left > :nth-child(2) {
   color: var(--orange);
   font-weight: bold;
   font-size: 2.5rem;
 }
-
 .s-left > :nth-child(3) {
   color: var(--gray);
   font-weight: 100;
@@ -27,139 +33,143 @@
   margin-top: 0.5rem;
   line-height: 1.3rem;
 }
-
 .s-button {
   width: 7rem;
   margin-top: 2rem;
 }
-
 .cards {
   position: relative;
 }
-
 .cards div {
   position: absolute;
 }
-
 .s-blur1 {
   background: var(--skyblue);
   top: 12rem;
   left: -10rem;
 }
-
 .s-blur2 {
   background: var(--purple);
   left: 12rem;
   top: 9rem;
 }
-
 @media screen and (max-width: 576px) {
   .services {
     margin: -31rem 0.8rem 3rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
   }
-
   .s-left {
     margin-bottom: 1rem;
   }
-
   .s-left > :nth-child(2) {
     font-size: 2rem;
   }
-
   .s-blur1 {
     top: 15rem;
     left: 0rem;
   }
-
   .cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     gap: 2rem;
     margin-top: 3rem;
   }
-
   .cards div {
     position: static;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     margin: auto;
   }
-
   .cards div:nth-of-type(4) {
     position: absolute;
     top: 33rem;
     left: 2rem;
   }
 }
-
 @media screen and (min-width: 576px) {
   .services {
     margin: -33rem 1.5rem 0 1.5rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
   }
-
   .cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     margin: 4rem auto;
     gap: 2rem;
   }
-
   .cards div {
     position: static;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin: 0;
   }
-
   .cards div:nth-of-type(4) {
     position: absolute;
     top: 15rem;
     left: 10rem;
   }
 }
-
 @media screen and (min-width: 900px) {
   .services {
     margin: 4rem 3rem;
   }
-
   .cards {
     position: relative;
   }
-
   .cards div {
     position: absolute;
     right: 10rem;
     top: 2rem;
   }
 }
-
 @media screen and (min-width: 1024px) {
   .services {
     flex-direction: row;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
     margin: -13rem 4rem;
   }
-
   .s-left {
     width: 50%;
     margin-top: 1rem;
   }
-
   .cards {
     top: 2rem;
     right: 4rem;
   }
-
   .cards div:nth-of-type(4) {
     top: 13rem;
     left: -3rem;
   }
 }
-
 @media screen and (min-width: 1440px) {
   .services {
     margin: -10rem 5rem;
