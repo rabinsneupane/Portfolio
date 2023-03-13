@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import React, { useContext } from "react";
 import { AiFillGithub, AiFillInstagram } from "react-icons/ai";
 import { RiLinkedinBoxFill } from "react-icons/ri";
+import { Link } from "react-scroll";
 import { themeContext } from "../../Context";
 import HeadPhoto from "../../img/HeadPhoto.webp";
 import "./Intro.css";
@@ -27,7 +28,9 @@ const Intro = () => {
           </span>
         </div>
 
-        <button className="button i-button">Get in Touch</button>
+        <Link to="contact" smooth={true} spy={true} offset={-200}>
+          <button className="button i-button">Get in Touch</button>
+        </Link>
 
         <div className="i-icons">
           <a
@@ -55,7 +58,7 @@ const Intro = () => {
       </div>
 
       <motion.div
-        initial={{ left: "20rem" }}
+        initial={{ left: "15rem" }}
         whileInView={{ left: "auto" }}
         transition={transition}
         className="i-right"

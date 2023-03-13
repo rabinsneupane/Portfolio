@@ -1,5 +1,6 @@
 import React from "react";
 import { Pagination } from "swiper";
+import "swiper/css";
 import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
 import profilePic1 from "../../img/profile1.webp";
@@ -23,7 +24,7 @@ const Testimonials = () => {
     {
       img: profilePic3,
       review:
-        "I can't express enough how grateful I am for his hard work and dedication to this project. The end result was a website that truly reflects my brand and delivers an outstanding user experience. I highly recommend this developer to anyone looking to improve their website's visual and user experience. Thank you!",
+        "I can't express enough how grateful I am for his hard work and dedication to this project. The end result was a website that truly reflects my brand and delivers an outstanding user experience. I highly recommend this developer to anyone looking to improve their website's visual and user experience.",
     },
     {
       img: profilePic4,

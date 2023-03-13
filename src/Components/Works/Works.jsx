@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import React, { useContext } from "react";
 import { themeContext } from "../../Context";
-// import Amazon from "../../img/amazon.webp";
 import Facebook from "../../img/Facebook.webp";
 import Fiverr from "../../img/fiverr.webp";
 import Shopify from "../../img/Shopify.webp";

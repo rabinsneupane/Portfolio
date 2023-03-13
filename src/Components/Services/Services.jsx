@@ -3,6 +3,7 @@ import React, { useContext } from "react";
 import { BiCodeAlt } from "react-icons/bi";
 import { CgUserlane } from "react-icons/cg";
 import { MdDesignServices } from "react-icons/md";
+import { Link } from "react-scroll";
 import { themeContext } from "../../Context";
 import Card from "../Card/Card";
 import "./Services.css";
@@ -22,7 +23,9 @@ const Services = () => {
           Development Services: Driving Your Online Presence Forward with
           Customized, High-Performance Solutions and Unmatched User Experience
         </span>
-        <button className="button s-button">Hire Me</button>
+        <Link to="contact" smooth={true} spy={true} offset={-200}>
+          <button className="button s-button">Hire Me</button>
+        </Link>
 
         <div className="blur s-blur1"></div>
       </div>

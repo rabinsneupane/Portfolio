@@ -12,7 +12,6 @@ import gpt3Thumbnail from "../../img/gpt3.png";
 import IMDbThumbnail from "../../img/imdbClone.png";
 import LorukiThumbnail from "../../img/loruki.png";
 import ManageThumbnail from "../../img/manage.png";
-
 import "./Portfolio.css";
 
 const Portfolio = () => {

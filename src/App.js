@@ -18,7 +18,7 @@ function App() {
     <div
       className="App"
       style={{
-        background: darkMode ? "#1f2028" : "",
+        background: darkMode ? "var(--black)" : "",
         color: darkMode ? "white" : "",
       }}
     >
